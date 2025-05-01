@@ -19,7 +19,7 @@ A simple Ruby-based String Calculator built using the principles of Test-Driven 
 1. **Clone the repo**
    ```bash
    git clone https://github.com/akshay2408/calculator-string.git
-   cd string-calculator
+   cd calculator-string
    ```
 2. **Install dependencies**
 
