@@ -18,7 +18,7 @@ A simple Ruby-based String Calculator built using the principles of Test-Driven 
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/your-username/string-calculator.git
+   git clone https://github.com/akshay2408/calculator-string.git
    cd string-calculator
    ```
 2. **Install dependencies**
@@ -29,5 +29,5 @@ A simple Ruby-based String Calculator built using the principles of Test-Driven 
 
 3. **Run test**
    ```bash
-   bundle install
+   rspec
    ```
