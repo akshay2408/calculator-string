@@ -29,5 +29,12 @@ describe CalculatorString do
         expect(calculator.calculate_sum('4,5,6,7,8,9,10')).to eq(49)
       end
     end
+
+    context 'when input contains numbers separated by new lines and commas' do
+      it 'returns the sum of all numbers' do
+        calculator = CalculatorString.new
+        expect(calculator.calculate_sum("1\n2,3")).to eq(6)
+      end
+    end
   end
 end
