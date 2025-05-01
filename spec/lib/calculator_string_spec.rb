@@ -50,5 +50,12 @@ describe CalculatorString do
         expect(calculator.calculate_sum('1,2,\n')).to eq("Invalid Input")
       end
     end
+
+    context 'when input contains negative numbers' do
+      it 'raises an exception with negative numbers' do
+        calculator = CalculatorString.new
+        expect { calculator.calculate_sum('1,-2,3,-4,9,-8') }.to raise_error("Negative numbers not allowed: -2, -4, -8")
+      end
+    end
   end
 end
