@@ -36,5 +36,19 @@ describe CalculatorString do
         expect(calculator.calculate_sum("1\n2,3")).to eq(6)
       end
     end
+
+    context 'when input contains custom delimiter' do
+      it 'returns the sum of all numbers' do
+        calculator = CalculatorString.new
+        expect(calculator.calculate_sum("//;\n1;2;3")).to eq(6)
+      end
+    end
+
+    context 'when input ends with \n' do
+      it 'returns "Invalid Input" when input ends with ,\n' do
+        calculator = CalculatorString.new
+        expect(calculator.calculate_sum('1,2,\n')).to eq("Invalid Input")
+      end
+    end
   end
 end
