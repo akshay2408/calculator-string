@@ -1,24 +1,33 @@
-# README
+# Calculator String – Incubyte TDD Kata
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple Ruby-based String Calculator built using the principles of Test-Driven Development (TDD).
 
-Things you may want to cover:
+## Features
 
-* Ruby version
+- Adds numbers in a comma-separated string
+- Supports custom delimiters (e.g., `//;\n1;2`)
+- Handles newlines as separators
+- Throws an error for negative numbers (lists all negatives)
+- Returns `"Invalid Input"` for malformed inputs (e.g., ends with `\n`)
 
-* System dependencies
+## Getting Started
 
-* Configuration
+### Code Location
 
-* Database creation
+- The main calculator code is located in the app/lib folder and specs under the spec folder.
 
-* Database initialization
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/your-username/string-calculator.git
+   cd string-calculator
+   ```
+2. **Install dependencies**
 
-* How to run the test suite
+   ```bash
+   bundle install
+   ```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+3. **Run test**
+   ```bash
+   bundle install
+   ```
